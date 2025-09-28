@@ -1,0 +1,128 @@
+.container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mainContent {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.albumCover {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.albumImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+}
+
+.imagePlaceholder {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 4px;
+  color: #666;
+  font-size: 14px;
+  margin-right: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  gap: 4px;
+}
+
+.errorIcon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.errorText {
+  font-size: 12px;
+  color: #999;
+}
+
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
+}
+
+.artist {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
+}
+
+.streamingLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.services {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.serviceLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: opacity 0.2s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.serviceLink:hover {
+  opacity: 0.7;
+}
+
+.serviceLink svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.serviceLink span {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: -20px;
+    }
+}
